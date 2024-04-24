@@ -1,4 +1,4 @@
-# SkulGeniusCalc_android
+# SkelGeniusCalc_android
 
 Do you often calculate easy number tasks?
 So, this calculator will troll you :)
