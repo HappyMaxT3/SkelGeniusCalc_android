@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-        if (!hasDecimalPart(result) && result > 50) {
+        if (!hasDecimalPart(result) && result < 50) {
             result = (int) result;
             editText.setText(String.valueOf(result));
             imageView.setVisibility(View.VISIBLE);
