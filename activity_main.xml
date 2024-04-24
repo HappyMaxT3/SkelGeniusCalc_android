@@ -1,0 +1,252 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_weight="0.3"
+            android:autofillHints=""
+            android:background="@drawable/your_pic"
+            android:ems="10"
+            android:gravity="right|center"
+            android:inputType="text"
+            android:text="0"
+            android:textSize="50pt"
+            tools:ignore="RtlHardcoded" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buAC"
+                android:text="AC"
+                android:onClick="ACclick"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/buPlusMinus"
+                android:layout_weight="1"
+                android:onClick="clickNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="+/-" />
+
+            <Button
+                android:id="@+id/buDiv"
+                android:text="/"
+                android:onClick="operation"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/buMultiple1"
+                android:onClick="operation"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="*" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu1"
+                android:text="1"
+                android:onClick="clickNumber"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/bu2"
+                android:layout_weight="1"
+                android:onClick="clickNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/bu3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:onClick="clickNumber"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/buPercent"
+                android:layout_weight="1"
+                android:onClick="clickPercent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="%" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu4"
+                android:text="4"
+                android:onClick="clickNumber"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/bu5"
+                android:layout_weight="1"
+                android:onClick="clickNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/bu6"
+                android:text="6"
+                android:onClick="clickNumber"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/buPlus"
+                android:layout_weight="1"
+                android:onClick="operation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu7"
+                android:text="7"
+                android:onClick="clickNumber"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/bu8"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:onClick="clickNumber"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/bu9"
+                android:text="9"
+                android:onClick="clickNumber"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/buMinus"
+                android:layout_weight="1"
+                android:onClick="operation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu0"
+                android:text="0"
+                android:onClick="clickNumber"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:id="@+id/buDot"
+                android:layout_weight="3"
+                android:onClick="clickNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="." />
+
+            <Button
+                android:id="@+id/buEqual"
+                android:text="="
+                android:onClick="clickEqual"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:src="@drawable/your_pic" />
+
+</FrameLayout>
