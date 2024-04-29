@@ -1,7 +1,7 @@
 # SkelGeniusCalc_android
 
 Do you often calculate easy number tasks?
-So, this calculator will troll you :)
+So, this calculator will troll you a little :)
 
 Download ```.apk``` on your android phone and start count!
 
