@@ -7,7 +7,7 @@ Download ```.apk``` on your android phone and start count!
 
 ## Functions?
 
-Calculator has a basic functions like summation, subtraction, multiplication and division. There is no specific. The calculator will react to your actions and troll you if the task was too easy. For the calculator, tasks are considered easy if the result is ```result % 100 == 0 ant etc.```, within multiplication table, less than 101 and has no fractional part.
+Calculator has a basic functions like summation, subtraction, multiplication and division. There is no specific. The calculator will react to your actions and troll you if the task was too easy. For the calculator, tasks are considered easy if the result is ```result % 100 == 0 ant etc.```, within multiplication table and has no fractional part.
 
 ## How it works?
 
