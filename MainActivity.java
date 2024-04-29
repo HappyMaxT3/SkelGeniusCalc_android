@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-        if (!hasDecimalPart(result) && result < 50) {
+        if (!hasDecimalPart(result) && isEasy(result, Double.parseDouble(newNumber))) {
             result = (int) result;
             editText.setText(String.valueOf(result));
             imageView.setVisibility(View.VISIBLE);
@@ -189,5 +189,45 @@ public class MainActivity extends AppCompatActivity {
     public static boolean hasDecimalPart(double result) {
         return result % 1 != 0;
     }
+
+    public static boolean isEasy(double result, double number){
+        if(easyNumbers(result, number)){
+            return true;
+        } else if(result <= 100 || number < 11){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean easyNumbers(double result, double number){
+
+        int count0 = 0;
+        int countNum = 0;
+        int countRes = 0;
+        String result_str = String.valueOf(result);
+        String number_str = String.valueOf(number);
+
+        for(int i = 0; i < result_str.length(); i++){
+            if(result_str.charAt(i) == '0'){
+                count0++;
+            }
+        }
+        for(int i = 0; i < number_str.length(); i++){
+            if(number_str.charAt(i) != '0'){
+                countNum++;
+            }
+        }
+        for(int i = 0; i < result_str.length(); i++){
+            countRes++;
+        }
+
+        if(countRes == countNum + count0){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
 
 }
