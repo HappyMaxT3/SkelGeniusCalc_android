@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
     public static boolean isEasy(double result, double number){
         if(easyNumbers(result, number)){
             return true;
-        } else if((result <= 11 && number <= 11) || result < 101){
+        } else if((result <= 11 && number <= 11) || result < 101 || result % 10 < 2){
             return true;
         } else {
             return false;
